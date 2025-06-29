@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{lang}" class="h-full bg-gray-100">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>{+title}Igo running{/title}</title>
+
+    <link rel="stylesheet" href="{assets.vendor.css}" />
+    <link rel="stylesheet" href="{assets.main.css}" />
+  </head>
+
+  <body class="h-full">
+
+    {> "layouts/_header" /}
+
+    <main>
+      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        {+content /}
+      </div>
+    </main>
+  
+
+    <script src="{assets.vendor.js}" ></script>
+    <script src="{assets.main.js}" ></script>
+  </body>
+</html>

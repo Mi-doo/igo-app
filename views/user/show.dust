@@ -1,0 +1,12 @@
+
+<h1>User Info</h1>
+
+
+<label for="first_name">First name:</label><br>
+<input type="text" name="first_name" value="{user.first_name}" disabled ><br/><br/>
+
+<label for="last_name">Last name:</label><br>
+<input type="text" name="last_name"  value="{user.last_name}" disabled><br/><br/>
+
+<label for="email">email:</label><br>
+<input type="email" name="email"  value="{user.email}" disabled><br/><br/>

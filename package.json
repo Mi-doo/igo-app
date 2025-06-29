@@ -1,0 +1,25 @@
+{
+  "name": "test-app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "eslint": "eslint ./app ./test",
+    "nodemon": "nodemon app.js",
+    "start": "concurrently \"npm run nodemon\" \"npm run webpack\"",
+    "webpack": "webpack serve --mode=development",
+    "webpack-prod": "webpack --mode=production",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "igo": "5.0.11",
+    "method-override": "^3.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/postcss": "^4.1.10",
+    "tailwindcss": "^4.1.10"
+  }
+}

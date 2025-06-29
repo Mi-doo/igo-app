@@ -1,0 +1,65 @@
+<h1> List of Users </>
+
+<div> 
+
+  <br/>
+  <br/>
+  <a href="/users/new"  style="font-size: 16px;">Create user</a>
+  <br/>
+
+  <table style="border-collapse: separate; border-spacing: 12px; width: 100%;">
+    <tr>
+      <th style="padding: 10px; text-align: center;">First Name</th>
+      <th style="padding: 10px; text-align: center;">Last Name</th>
+      <th style="padding: 10px; text-align: center;">Email</th>
+      <th style="padding: 10px; text-align: center;">Actions</th>
+    </tr>
+
+  {#users}
+    {@sep}
+    <tr style="padding: 10px; text-align: center;">
+    {/sep}
+
+      {@sep}
+        <td>
+      {/sep}
+        {.first_name}
+      {@sep}
+        </td>
+      {/sep}
+
+      {@sep}
+        <td>
+      {/sep}
+        {.last_name}
+      {@sep}
+        </td>
+      {/sep}
+
+      {@sep}
+        <td>
+      {/sep}
+        {.email}
+      {@sep}
+        </td>
+      {/sep}
+
+      {@sep}
+        <td>
+        <button> <a href="/users/{.id}">show</a> </button>
+        <button> <a href="/users/{.id}/edit">Update</a> </button>
+
+        <form method="POST" action="/users/{.id}?_method=DELETE">
+         <button type="submit">Delete</button>
+        </form>
+        </td>
+      {/sep}
+
+    {@sep}
+    </tr>
+    {/sep}
+
+  {/users}
+  </table>
+
+</div>

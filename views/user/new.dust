@@ -1,0 +1,22 @@
+<h1> Create New User </h1>
+
+
+<form method="POST" action="/users/new">
+    <label for="first_name">First name:</label><br>
+    <input type="text" name="first_name" value="{user.first_name}">
+    {?errors.first_name} <span style="color:red"> * {errors.first_name.msg}  </span > {/errors.first_name}
+    <br/><br/>
+    
+    
+    <label for="last_name">Last name:</label><br>
+    <input type="text" name="last_name" value="{user.last_name}">
+    {?errors.last_name} <span style="color:red"> * {errors.last_name.msg}  </span > {/errors.last_name}
+    <br/><br/>
+
+    <label for="email">email:</label><br>
+    <input type="email" name="email" value="{user.email}">
+    {?errors.email} <span style="color:red"> * {errors.email.msg}  </span > {/errors.email}
+    <br/><br/>
+
+    <button type="submit">Create</button>
+</form>
